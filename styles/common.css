@@ -1,0 +1,49 @@
+/* header */
+header {
+    background: lightblue;
+    width:calc(100% - 60px); /* full / 피그마 마진값 30 */
+    height: 100px;
+    margin:0 auto;
+    display:flex; flex-flow: row nowrap; 
+    align-items: center; justify-content: space-between;
+}
+header h1 {width: 213px;}
+header h1 a {}
+header h1 a img {width: 100%;}
+header .right {
+    display:flex; flex-flow:row nowrap;
+    align-items:center; justify-content: space-between;
+}
+header .right > * {margin-left: 20px;}
+header .right .lang {
+    font-weight:500; margin-left: 0;
+    font-size:1.25rem; letter-spacing: -0.02em;
+}
+header .right #search_frm {
+    background: #222;
+    width:319px;
+    padding:7px 12px; 
+    border-radius:15px;
+}
+header .right #search_frm fieldset {
+    display:flex; flex-flow:row nowrap; 
+    align-items: center; justify-content: space-between;
+}
+header .right #search_frm fieldset #search_txt {
+    background:none; color:#fff;
+    letter-spacing: -0.02em;
+}
+header .right #search_frm fieldset #search_txt::placeholder {color:#fff;}
+header .right #search_frm fieldset #search_btn {
+    background:none;
+    width:21px; height:20px;
+}
+header .right #search_frm fieldset #search_btn img {}
+/* header .right a {margin-right:20px;} */
+header .right #login,
+header .right #cart,
+header .right #nav {width:35px; height:35px;}
+header .right a img {width: 100%;}
+header .right #login img {}
+header .right #cart img {}
+header .right #nav img {}
