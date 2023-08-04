@@ -13,7 +13,6 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
 ::-webkit-scrollbar-thumb:hover {background-color: #FF4090;}
 /* header */
 header {
-    background: lightblue;
     width:calc(100% - 60px); /* full / 피그마 마진값 30 */
     height: 100px;
     margin:0 auto;
@@ -100,11 +99,12 @@ header #open_nav nav {
     align-items:center; 
 }
 header #open_nav nav a {
+    /* width: 100%; text-align: center; */
     font-size:3.157rem; font-weight:700;
     letter-spacing:-0.02em; line-height:110px;
+    transition: all 0.2s;
 }
 header #open_nav nav a:hover {
     color: #FF4090;
     border-bottom:1px dashed #FF4090;
-    /* text-shadow:2px 2px 5px #d8d8d8; */
 }
