@@ -70,6 +70,7 @@ header #open_nav #nav_close {
     position:absolute;
     top:80px; right:100px;
     width:40px; height:40px;
+    /* X버튼 클릭이 안된다면 z-index 적용 */
 }
 header #open_nav #nav_close img {width:100%;}
 /* swiper-slide nav-adver */
