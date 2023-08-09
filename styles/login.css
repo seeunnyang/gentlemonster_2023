@@ -1,0 +1,90 @@
+main {width:400px; margin:80px auto;}
+/* title */
+main .title {
+    display:flex; flex-flow:row nowrap;
+    align-items:flex-end; justify-content:space-between;
+    border-bottom:1px solid #000;
+    padding-bottom: 10px;
+}
+main .title h1 {
+    font-size:1.777rem; font-weight:700; 
+    letter-spacing:-0.02em;
+}
+main .title .logo {width:155px;}
+main .title .logo img {width:100%;}
+/* form */
+main form {margin-top:60px;}
+main form fieldset {}
+main form fieldset .in {
+    display:flex; flex-flow:column nowrap;
+    align-items:start;
+}
+main form fieldset .id {margin-bottom: 20px;}
+main form fieldset .pw {margin-bottom: 30px;}
+main form fieldset .in span {
+    letter-spacing:-0.02em;
+    margin-bottom:10px;
+}
+main form fieldset .in input {
+    width:100%; height:35px;
+    border:1px solid #000;
+}
+main form fieldset .find {text-align:center;}
+main form fieldset .find a {}
+main form fieldset .find a:last-child {margin-left:40px;}
+main form fieldset .find a span {letter-spacing:-0.02em;}
+main form fieldset .find a .next {}
+main form fieldset .find a .next img {width:12px;}
+main form fieldset .btn {
+    margin-top:30px;
+    display:flex; flex-flow:column nowrap;
+}
+main form fieldset .btn button {
+    width:100%; height:40px; 
+    font-weight:500; letter-spacing:-0.02em;
+    background:#000; color:#fff;
+    transition: 0.2s all;
+}
+main form fieldset .btn button:hover {background:#ff4090;}
+main form fieldset .btn .login_btn {margin-bottom:20px;}
+main form fieldset .btn .join_btn {}
+/* easy_login */
+main .easy_login {margin-top:80px;}
+main .easy_login .mini_title {border-top:1px solid #000;}
+main .easy_login .mini_title h2 {
+    width:calc(100% - 280px); margin:0 auto;
+    text-align:center;
+    font-weight:500; letter-spacing:-0.02em;
+    position:relative; top:-10px;
+    background:#fff;
+}
+main .easy_login .con {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    width:calc(100% - 100px); margin:30px auto 0;
+}
+main .easy_login .con a {width:50px;}
+main .easy_login .con a img {border-radius:50%; width:100%;}
+/* check_oder */
+main .check_order {margin-top:80px;}
+main .check_order .mini_title {border-top:1px solid #000;}
+main .check_order .mini_title h2 {
+    width:calc(100% - 280px); margin:0 auto;
+    text-align:center;
+    font-weight:500; letter-spacing:-0.02em;
+    position:relative; top:-10px;
+    background:#fff;
+}
+main .check_order p {
+    font-size:0.75rem; letter-spacing:-0.02em;
+    line-height:20px; text-align:start;
+    margin-top:20px;
+}
+main .check_order button {
+    margin-top:30px;
+    background:#000; color:#fff;
+    width:100%; height:40px;
+    font-weight:500; letter-spacing:-0.02em;
+    transition:0.2s all;
+}
+main .check_order button:hover {background:#ff4090;}
