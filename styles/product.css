@@ -1,7 +1,45 @@
-main {
-    width:calc(100% - 60px); margin:0 auto;
-}
+main {}
 /* 1. swiper-slide */
+main #product_slide {}
+main #product_slide .swiper-wrapper {}
+main #product_slide .swiper-wrapper .swiper-slide {
+    /* 공통 slide1~6 */
+    width:700px; height:740px;
+    position:relative;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt {
+    position:absolute; bottom:50px; left:50px;
+    color:#fff;
+    /* 초기숨기기(이후 swiper 활용 서서히 나타나고 사라지기 기능추가 */
+    opacity:0; transform:translateX(50px);
+    transition:all 1.5s;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt dt {
+    font-size:3.157rem; letter-spacing:-0.02em;
+    line-height:60px;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt dt em {
+    font-size:3.157rem; font-weight:700;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt dd {
+    font-size:1.777rem; letter-spacing:-0.02em;
+    margin-top:30px;
+}
+main #product_slide .swiper-wrapper .slide1 {background-image:url(../images/model/model_01.jpg);}
+main #product_slide .swiper-wrapper .slide2 {background-image:url(../images/model/model_02.jpg);}
+main #product_slide .swiper-wrapper .slide3 {background-image:url(../images/model/model_03.jpg);}
+main #product_slide .swiper-wrapper .slide4 {background-image:url(../images/model/model_04.jpg);}
+main #product_slide .swiper-wrapper .slide5 {background-image:url(../images/model/model_05.jpg);}
+main #product_slide .swiper-wrapper .slide6 {background-image:url(../images/model/model_06.jpg);}
+/* swiper-scrollber design */
+main #product_slide .swiper-scrollbar {/* 스크롤 배경 (크기,위치조정O)*/
+    /* position:absolute 기본설정 */
+    left:50%; bottom:15px; transform:translateX(-50%);
+    background:#fff; width:500px; 
+}
+main #product_slide .swiper-scrollbar-drag {/* 스크롤 막대(크기조정X) */
+    background:#ff4090;
+}
 /* 2. category */
 main #category {
     width: 1350px; margin:100px auto;
@@ -19,7 +57,7 @@ main #category a span {
 main #category a:hover img {filter: brightness(105%);}
 main #category a:hover span {color:#ff4090;}
 /* 3. product_list */
-main #product_list {}
+main #product_list {width:calc(100% - 60px); margin:0 auto;}
 main #product_list .title {}
 main #product_list .title .top {
     display:flex; justify-content:space-between;
@@ -50,7 +88,12 @@ main #product_list .title .btm p em {
 }
 main #product_list .title .btm #product_align {
     font-size: 1.333rem; border:none;
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(../images/adver_down.png) no-repeat;
+    background-position: right; */
 }
+/* main #product_list .title .btm #product_align::-ms-expand {display:none;} */
 main #product_list .title .btm #product_align option {
     font-size: 1.333rem; letter-spacing:-0.02em;
 }
