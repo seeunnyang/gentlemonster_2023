@@ -1,0 +1,16 @@
+main {
+    width: 1350px; margin:50px auto;
+    display:flex; flex-flow: column nowrap;
+    align-items: center;
+}
+#map {
+    background:lightblue;
+    width:700px; margin:50px 0 20px 0; height:500px;
+    border: 2px solid #222;
+}
+main h1 {
+    font-size: 1.777rem; letter-spacing:-0.02em; font-weight:500;
+}
+main p {
+    letter-spacing:-0.02em; font-weight:500; margin-bottom:10px;
+}
